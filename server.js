@@ -5,7 +5,7 @@ const Videos = require("./dbModel.js");
 // app config
 const app = express();
 
-const port = 9000;
+const port = process.env.port || 9000;
 
 // middlewares
 app.use(express.json());
